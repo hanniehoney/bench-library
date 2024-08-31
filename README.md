@@ -1,17 +1,29 @@
-# llm-benchmark
-A list of comprehensive LLM evaluation frameworks. Contributions welcome!
+# Benchmark Library
+<img src="image.png" alt="Bench-Library" width="512"/>
 
-| Benchmark | Release Date | Repository | Paper/Blog | Dataset Number | Aspect | Licence |
-| --- | --- | --- | --- | --- | --- | --- |
-| HELM | --- | https://github.com/stanford-crfm/helm | [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110) | 42 | --- | --- |
-| BIG-bench | --- | https://github.com/google/BIG-bench | [Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models](https://openreview.net/pdf?id=uyTL5Bvosj) | 214 | --- | --- |
-| BigBIO | --- | https://github.com/bigscience-workshop/biomedical | [BigBio: A Framework for Data-Centric Biomedical Natural Language Processing](https://proceedings.neurips.cc/paper_files/paper/2022/file/a583d2197eafc4afdd41f5b8765555c5-Paper-Datasets_and_Benchmarks.pdf) | 126 | --- | --- |
-| BigScience Evaluation | --- | https://github.com/bigscience-workshop/evaluation | --- | 28 | --- | --- |
-| Language Model Evaluation Harness | --- | https://github.com/EleutherAI/lm-evaluation-harness | [Evaluating Large Language Models (LLMs) with Eleuther AI](https://wandb.ai/wandb_gen/llm-evaluation/reports/Evaluating-Large-Language-Models-LLMs-with-Eleuther-AI--VmlldzoyOTI0MDQ3) [Evaluating LLMs](https://www.eleuther.ai/projects/large-language-model-evaluation) | 56 | --- | --- |
-| Scholar Evals | --- | [https://github.com/scholar-org/scholar-evals](https://github.com/scholar-org/scholar-evals) | --- | --- | --- | --- |
-| Code Generation LM Evaluation Harness | --- | https://github.com/bigcode-project/bigcode-evaluation-harness | --- | 13 | --- | --- |
-| Chatbot Arena | --- | https://github.com/lm-sys/FastChat | --- | --- | --- | --- |
-| GLUE | --- | https://github.com/nyu-mll/jiant | --- | 11 | --- | --- |
-| SuperGLUE | --- | https://github.com/nyu-mll/jiant | --- | 10 | --- | --- |
-| CLUE | --- | https://github.com/CLUEbenchmark/CLUE | --- | 9 | --- | --- |
-| CodeXGLUE | --- | https://github.com/microsoft/CodeXGLUE | --- | 10 | --- | --- |
+This collection inspired by the amazing work of [llm_benchmarks](https://github.com/leobeeson/llm_benchmarks) and [llm-benchmark](https://github.com/terryyz/llm-benchmark). We’re all about collecting a diverse range of benchmarks that bring new perspectives to the table. Contributions are always welcome!
+
+## Benchmarks
+
+| Capability | Benchmark | Description | Resource |
+| --- | --- | --- | --- |
+| Knowledge and Language Understanding |
+|  | Massive Multitask Language Understanding (MMLU) | Measures general knowledge across 57 different subjects, ranging from STEM to social sciences. | [GitHub](https://github.com/hendrycks/test) 
+| |General Language Understanding Evaluation (GLUE) |A collection of various language tasks from multiple datasets, designed to measure overall language understanding. | [Website](https://gluebenchmark.com/) 
+|  | SuperGLUE | An advanced version of the GLUE benchmark, comprising more challenging and diverse language tasks. | [Dataset](https://huggingface.co/datasets/super_glue) 
+| Reasoning |
+|  | AI2 Reasoning Challenge (ARC) | Tests LLMs on grade-school science questions, requiring both deep general knowledge and reasoning abilities. | [Dataset](https://huggingface.co/datasets/ai2_arc) 
+|  | HellaSwag | Tests natural language inference by requiring LLMs to complete passages in a way that requires understanding intricate details. | [GitHub](https://github.com/rowanz/hellaswag/tree/master/data) 
+|  | Discrete Reasoning Over Paragraphs (DROP) | An adversarially-created reading comprehension benchmark requiring models to navigate through references and execute operations like addition or sorting. | [Dataset](https://huggingface.co/datasets/drop) 
+| Coding | 
+|  | HumanEval | Contains programming challenges for evaluating LLMs' ability to write functional code based on instructions. | [GitHub](https://github.com/openai/human-eval)
+|  | CodeXGLUE | Evaluates LLMs' ability to understand and work with code across various tasks like code completion and translation.| [GitHub](https://github.com/microsoft/CodeXGLUE) 
+| Multi Turn Open Ended Conversations |
+|  | MT-bench | Tailored for evaluating the proficiency of chat assistants in sustaining multi-turn conversations. | [Dataset](https://huggingface.co/datasets/lmsys/mt_bench_human_judgments) 
+|  | Question Answering in Context (QuAC) | Features 14,000 dialogues with 100,000 question-answer pairs, simulating student-teacher interactions. | [Website](https://quac.ai/) 
+| Math |
+|  | Grade School Math 8K(GSM8K)| It consists of 8,000 grade school math problems that require multi-step reasoning to solve.| [Dataset](https://huggingface.co/datasets/openai/gsm8k) 
+|  | MATH |The MATH dataset consists of 12,500 problems derived from high school math competitions. | [Dataset](https://paperswithcode.com/sota/math-word-problem-solving-on-math) 
+<!-- |  | --- | --- | []() 
+|  | --- | --- | []() 
+|  | --- | --- | []()  -->
